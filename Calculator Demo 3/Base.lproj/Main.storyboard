@@ -272,29 +272,27 @@
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2KC-vR-JRx" userLabel="Stack View Result">
                                 <rect key="frame" x="131" y="95" width="113.5" height="46"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Raz-wd-shw">
-                                        <rect key="frame" x="0.0" y="0.0" width="113.5" height="46"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="46" id="aYe-EE-gXE"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Raz-wd-shw">
+                                <rect key="frame" x="1" y="95" width="375" height="46"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="drQ-KS-3Xs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4gi-ds-Jut"/>
+                            <constraint firstItem="Raz-wd-shw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="AhW-tv-0ry"/>
                             <constraint firstItem="drQ-KS-3Xs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="217" id="FBQ-PR-PgQ"/>
                             <constraint firstItem="drQ-KS-3Xs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ho3-ar-jt4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2KC-vR-JRx" secondAttribute="trailing" constant="130.5" id="MaE-Uf-C6A"/>
                             <constraint firstItem="drQ-KS-3Xs" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Rn5-AR-qPx"/>
                             <constraint firstItem="drQ-KS-3Xs" firstAttribute="top" secondItem="2KC-vR-JRx" secondAttribute="bottom" constant="76" id="U2j-Jb-ani"/>
+                            <constraint firstItem="Raz-wd-shw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="1" id="UHc-dY-d0k"/>
                             <constraint firstItem="2KC-vR-JRx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="Weo-aG-tqU"/>
                             <constraint firstItem="2KC-vR-JRx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="95" id="rzL-fQ-PFK"/>
+                            <constraint firstItem="Raz-wd-shw" firstAttribute="top" secondItem="2KC-vR-JRx" secondAttribute="top" id="wjA-Hl-aO1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

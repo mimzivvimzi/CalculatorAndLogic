@@ -13,20 +13,62 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     
-    var numberOnScreen : Double = 0 // Current number displayed on the label
-    var previousNumber : Double = 0 // Stores the previous number
-    var performingMath = false // Bool will be used to perform the math operations
-    var operation = 0 // Math operation which is needed to perform on the numbers. The + sign has tag 15.  The = sign has tag 16.
+    var currentNumber = 0
+    var previousNumber = 0
+    var isCalculating = false
+    var mathOperation = 0
+    var resultDisplayed = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
-    @IBAction func numberButtonsClicked(_ sender: Any) {
+    @IBAction func numberButtonsClicked(_ sender: UIButton) {
+        currentNumber = sender.tag
+        if isCalculating {
+            resultLabel.text = String(currentNumber)
+            isCalculating = false
+        } else {
+            if let currentlyInLabel = resultLabel.text {
+                if currentlyInLabel == "0" {
+                    resultLabel.text = String(currentNumber)
+                } else {
+                    let newNumber = currentlyInLabel + String(currentNumber)
+                    resultLabel.text = newNumber
+                    currentNumber = Int(newNumber)!
+                }
+            }
+        }
     }
     
-    @IBAction func operationButtonsClicked(_ sender: Any) {
+    @IBAction func operationButtonsClicked(_ sender: UIButton) {
+        switch sender.tag {
+        case 99:
+            resultLabel.text = "0"
+            isCalculating = false
+            currentNumber = 0
+            previousNumber = 0
+            mathOperation = 0
+        case 10:
+            switch mathOperation {
+            case 11:
+                currentNumber = previousNumber + currentNumber
+            case 12:
+                currentNumber = previousNumber - currentNumber
+            case 13:
+                currentNumber = previousNumber * currentNumber
+            case 14:
+                currentNumber = previousNumber / currentNumber
+            default:
+                print("Something is wrong")
+            }
+            resultLabel.text = String(currentNumber)
+            resultDisplayed = true
+        default:
+            mathOperation = sender.tag
+            previousNumber = currentNumber
+            isCalculating = true
+        }
     }
     
 }
