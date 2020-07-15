@@ -13,6 +13,7 @@
 		694DC0FD2388F4A1008AA88B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694DC0FB2388F4A1008AA88B /* Main.storyboard */; };
 		694DC0FF2388F4A3008AA88B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694DC0FE2388F4A3008AA88B /* Assets.xcassets */; };
 		694DC1022388F4A3008AA88B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694DC1002388F4A3008AA88B /* LaunchScreen.storyboard */; };
+		69742AAA24BF2DAE0076776A /* CalculatorScreenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 69742AA924BF2DAE0076776A /* CalculatorScreenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		694DC0FE2388F4A3008AA88B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		694DC1012388F4A3008AA88B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		694DC1032388F4A3008AA88B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69742AA824BF2CE70076776A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		69742AA924BF2DAE0076776A /* CalculatorScreenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalculatorScreenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +43,8 @@
 		694DC0E92388F4A1008AA88B = {
 			isa = PBXGroup;
 			children = (
+				69742AA824BF2CE70076776A /* README.md */,
+				69742AA924BF2DAE0076776A /* CalculatorScreenshot.png */,
 				694DC0F42388F4A1008AA88B /* Calculator Demo 3 */,
 				694DC0F32388F4A1008AA88B /* Products */,
 			);
@@ -128,6 +133,7 @@
 				694DC1022388F4A3008AA88B /* LaunchScreen.storyboard in Resources */,
 				694DC0FF2388F4A3008AA88B /* Assets.xcassets in Resources */,
 				694DC0FD2388F4A1008AA88B /* Main.storyboard in Resources */,
+				69742AAA24BF2DAE0076776A /* CalculatorScreenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
